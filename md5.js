@@ -284,13 +284,12 @@ function getPassword()
     {
       name = name + i.toString();
     }
-
-    if (i%1000==0)
+    if (i%100000==0)
     {
       console.log(i+"/999999");
     }
     var result = hex_md5(name);
-    if (result=="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")
+    if (result=="900150983cd24fb0d6963f7d28e17f72")
     {
       console.log(name);
       break;
