@@ -257,48 +257,40 @@ function binl2b64(binarray)
 
 function getPassword()
 {
-  for(var i=0; i<100000000;i++)
+  for(var i=0; i<1000000;i++)
   {
-    var name = "telecomadmin";
+    var name = "CUAdmin";
     if (i<10)
-    {
-      name = name + "0000000" + i.toString();
-    }
-    else if (i < 100)
-    {
-      name = name + "000000" + i.toString();
-    }
-    else if (i < 1000)
     {
       name = name + "00000" + i.toString();
     }
-    else if (i < 10000)
+    else if (i < 100)
     {
       name = name + "0000" + i.toString();
     }
-    else if (i < 100000)
+    else if (i < 1000)
     {
       name = name + "000" + i.toString();
     }
-    else if (i < 1000000)
+    else if (i < 10000)
     {
       name = name + "00" + i.toString();
     }
-    else if (i < 10000000)
+    else if (i < 100000)
     {
       name = name + "0" + i.toString();
     }
-    else if (i < 100000000)
+    else if (i < 1000000)
     {
       name = name + i.toString();
     }
 
     if (i%100000==0)
     {
-      console.log(i+"/99999999");
+      console.log(i+"/999999");
     }
     var result = hex_md5(name);
-    if (result=="")
+    if (result=="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")
     {
       console.log(name);
       break;
