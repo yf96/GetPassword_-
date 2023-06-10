@@ -285,7 +285,7 @@ function getPassword()
       name = name + i.toString();
     }
 
-    if (i%100000==0)
+    if (i%1000==0)
     {
       console.log(i+"/999999");
     }
